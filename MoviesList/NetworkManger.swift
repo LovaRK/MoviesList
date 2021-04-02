@@ -23,7 +23,8 @@ enum ServiceType: URLConvertible{
     var URLString : String{
         switch self{
         case .serviceloadMovies(let type):
-            print("https://api.themoviedb.org/3/movie/\(type)?api_key=4fafde19e120ff8f6ef8e1106f0e614c")
+            // 4fafde19e120ff8f6ef8e1106f0e614c
+            print("https://api.themoviedb.org/3/movie/\(type)?api_key=<Your_API_Key>")
             return String(format: "https://api.themoviedb.org/3/movie/\(type)?api_key=4fafde19e120ff8f6ef8e1106f0e614c")
         }
     }
